@@ -74,7 +74,7 @@ jobs:
           curl -fsSL -o core.zip https://api.github.com/repos/szjmhxd/QtScrcpyCoreZoom/zipball/main
           rm -rf QtScrcpy/QtScrcpyCore && mkdir -p QtScrcpy/QtScrcpyCore
           mkdir coretmp && unzip -q core.zip -d coretmp
-          cp -a coretmp/QtScrcpyCore-*/. QtScrcpy/QtScrcpyCore/
+          cp -a coretmp/QtScrcpyCoreZoom-*/. QtScrcpy/QtScrcpyCore/
           rm -rf coretmp core.zip
           grep -c sendVirtualFingerEvent QtScrcpy/QtScrcpyCore/src/device/controller/inputconvert/inputconvertnormal.cpp
           echo 0.0.0 > QtScrcpy/appversion
